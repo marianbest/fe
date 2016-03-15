@@ -1,0 +1,20 @@
+{ 
+"myWindows" : 
+    [
+        {
+          "name": "Foo",
+          "start_date": "01-03-2016",
+          "end_date": "10-03-2016"
+        },
+        {
+          "name": "Bar",
+          "start_date": "03-03-2016",
+          "end_date": "11-03-2016"
+        },
+        {
+          "name": "Baz",
+          "start_date": "10-03-2016",
+          "end_date": "12-03-2016"
+        }
+    ]
+}

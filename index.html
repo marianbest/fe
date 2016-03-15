@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Fe - Test</title>
+  <meta name="description" content="Fe test">
+  <meta name="author" content="Marian Bucur">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+    
+<script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/2.0.4/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://code.angularjs.org/1.5.0/angular.min.js"></script>
+<script src="js/angular-bootstrap-datepicker.js" charset="utf-8"></script>
+    
+  <script type="text/javascript" src="js/myproto.js"></script>
+  <script type="text/javascript" src="js/myjs.js"></script>
+    
+</head>
+<body ng-app="feApp" ng-controller="myController">
+    <h1>Windows Generator 
+    <button class="btn btn-success" ng-click="addWindow()">Add window</button>
+    <button class="btn btn-info" ng-click="getData()">Get Data</button>
+    </h1>
+    <hr>
+    <div class="list-group" ng-repeat="myWindow in myWindows">
+        <window-result></window-result>
+    </div>
+    <hr>
+    <div class="list-group" ng-repeat="myWindow in myWindows">
+        <progress-bar></progress-bar>
+    </div>
+    <hr>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<div class="row">
+  <div class="col-lg-3">
+    <div class="input-group">
+      <span class="input-group-addon">
+        Window name
+      </span>
+      <input type="text" class="form-control" value="{{myWindow.name}}" ng-model="myWindow.name">
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+  <div class="col-lg-3">
+    <div class="input-group">
+      <span class="input-group-addon">
+        Start date
+      </span>
+      <input type="text" class="form-control" value="{{myWindow.start_date}}" ng-datepicker ng-datepicker-options="datepickerOptions" ng-model="myWindow.start_date">
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+  <div class="col-lg-3">
+    <div class="input-group">
+      <span class="input-group-addon">
+        End date
+      </span>
+      <input type="text" class="form-control" value="{{myWindow.end_date}}" ng-datepicker ng-datepicker-options="datepickerOptions" ng-model="myWindow.end_date">
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+  <div class="col-lg-3">
+    <button class="btn btn-danger" ng-click="deleteWindow(myWindow)">X</button>
+  </div><!-- /.col-lg-6 -->
+</div><!-- /.row -->
